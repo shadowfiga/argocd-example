@@ -6,10 +6,14 @@ metadata:
   namespace: argocd
 
 spec:
+  project: default
   destination:
     namespace: guestbook
     server: "https://kubernetes.default.svc"
   source:
     path: guestbook
-    repoURL: "https://github.com/shadowfiga/argocd-example.git"
-    targetRevision: HEAD
+    repoURL: "https://github.com/mabusaa/argocd-example-apps"
+    targetRevision: master
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true

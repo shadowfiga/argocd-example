@@ -7,7 +7,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 # 2. Wait for pods to come up
 # TODO: Find better solution
 echo "[O]: Waiting for services to come online ..."
-sleep 1m 30s
+# sleep 1m 30s
 
 # 3. Forward port of the argocd dashboard
 echo "[O]: Forwarding argo cd dashboard ui port to https://localhost:8080"
