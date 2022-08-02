@@ -20,3 +20,5 @@ spec:
       prune: true # Deletes resources automatically
     syncOptions:
       - CreateNamespace=true
+      - ApplyOutOfSyncOnly=true
+      - FailOnSharedResource=true
